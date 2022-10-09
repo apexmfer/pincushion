@@ -16,6 +16,7 @@ import { ImageMetadata } from "../dbextensions/ImageDBExtension";
 import { escapeString, stringToMongoId, unescapeString } from "../lib/parse-helper";
  
 import { generateAttachableImageData, getMediaTypeFromDataBuffer } from "../lib/image-helper";
+import { json } from "stream/consumers";
 
 
 const { sync: mime, async: mimeAsync } = require('mime-kind');
@@ -42,7 +43,8 @@ export interface UploadedFile {
   imageId: string,
   filename:string,
   tagname?:string, 
-  extension:string
+  extension:string,
+  metadata?:string
 }
 
 
@@ -102,6 +104,18 @@ export default class ImageController extends APIController {
     let uploadResponse =  await ImageController.uploadNewImageFromFile( fileData, title, metaData, this.mongoDB  )
 
     return uploadResponse
+    /*
+    {data: {
+
+      images:   [
+
+      {filename:''}
+
+    ]
+    }}
+  
+
+    */
 
 }
  
@@ -356,7 +370,8 @@ static async uploadNewImageFromFile(fileData: any, title:string, metaData:any,  
                   imageId: newImageRecordId,
                   filename: fileHashName,
                   extension: uploadable.extension,
-                  tagname: uploadable.tagname             
+                  tagname: uploadable.tagname,
+                  metadata: JSON.stringify(metadata)   
                 }
 
                 uploadedImages.push(uploadedFile) 
