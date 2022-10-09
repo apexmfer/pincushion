@@ -26,8 +26,7 @@ import ImageDBExtension from './dbextensions/ImageDBExtension'
  
  
 import BackendServer from './lib/backend-server'
- 
-import FrontendServer from '../../indiefuture/server/lib/frontend-server'
+  
 import ImageController from './controllers/ImageController'
 
 
