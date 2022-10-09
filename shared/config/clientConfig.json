@@ -4,8 +4,7 @@
        
         "externalRoutes": {
 
-              "api":"https://api.detroitlocal.art",
-              "web":"https://detroitlocal.art"
+             
             },
 
 
@@ -17,9 +16,7 @@
     },
     "staging":{
       "externalRoutes": {
-        
-        "api":"https://api.detroitlocal.art",
-        "web":"https://detroitlocal.art"
+      
       } ,
       "network":"goerli"
        
@@ -29,9 +26,7 @@
     "development":{
      
       "externalRoutes": {
- 
-        "api":"http://localhost:3000",
-        "web":"http://localhost:8080"
+  
       },
       "network":"goerli"
   
@@ -41,9 +36,7 @@
     "test":{
      
       "externalRoutes": {
- 
-        "api":"http://localhost:6000",
-        "web":"http://localhost:5000"
+  
       },
       "network":"goerli"
 

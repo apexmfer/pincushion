@@ -99,9 +99,9 @@ export default class ImageController extends APIController {
     let metaData = {} 
  
 
-    return await ImageController.uploadNewImageFromFile( fileData, title, metaData, this.mongoDB  )
+    let uploadResponse =  await ImageController.uploadNewImageFromFile( fileData, title, metaData, this.mongoDB  )
 
-    
+    return uploadResponse
 
 }
  

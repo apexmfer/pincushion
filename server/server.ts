@@ -86,9 +86,6 @@ let serverConfig = serverConfigFile[envmode]
        
     ]
   
-   
-     const domainRootURL = AppHelper.getLocalClientConfig().externalRoutes.api
-    console.log({domainRootURL})
     
  
 
