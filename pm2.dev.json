@@ -1,0 +1,33 @@
+ {
+    "apps" : [
+        {
+          "name": "apiServer",
+          "script": "npm run server",
+          "watch": true,
+          "ignore_watch" : ["node_modules", "public","dist","cache"],
+          "watch_options": {
+            "followSymlinks": false
+        },
+          "env": { 
+              "NODE_ENV": "development"
+          }
+        },
+
+
+        {
+          "name": "dev server",
+          "script": "npm run dev",
+          "watch": true,
+          "ignore_watch" : ["node_modules", "public","dist","cache"],
+          "watch_options": {
+            "followSymlinks": false
+        },
+          "env": { 
+              "NODE_ENV": "development"
+          }
+        }
+          
+    ]
+  }
+
+ 

@@ -1,0 +1,4 @@
+{
+    "user":{"id":"106508412246109213449","displayName":"Ad Mazzola","name":{"familyName":"Mazzola","givenName":"Ad"},"emails":[{"value":"admazzola@gmail.com","verified":true}],"photos":[{"value":"https://lh3.googleusercontent.com/a-/AFdZucqa5WbQFR7raGJSi1bBW-4-p6YAxhhCSFdveatA=s96-c"}],"provider":"google","_raw":"{\n  \"sub\": \"106508412246109213449\",\n  \"name\": \"Ad Mazzola\",\n  \"given_name\": \"Ad\",\n  \"family_name\": \"Mazzola\",\n  \"picture\": \"https://lh3.googleusercontent.com/a-/AFdZucqa5WbQFR7raGJSi1bBW-4-p6YAxhhCSFdveatA\\u003ds96-c\",\n  \"email\": \"admazzola@gmail.com\",\n  \"email_verified\": true,\n  \"locale\": \"en\"\n}","_json":{"sub":"106508412246109213449","name":"Ad Mazzola","given_name":"Ad","family_name":"Mazzola","picture":"https://lh3.googleusercontent.com/a-/AFdZucqa5WbQFR7raGJSi1bBW-4-p6YAxhhCSFdveatA=s96-c","email":"admazzola@gmail.com","email_verified":true,"locale":"en"}}
+
+}

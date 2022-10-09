@@ -1,0 +1,55 @@
+{
+    "compilerOptions": {
+      "target": "es6",
+      "resolveJsonModule": true,
+      "experimentalDecorators": true,
+      "strict": true,
+      "lib": [
+        "ES6",
+        "dom"
+      ],
+      "module": "CommonJS",
+      "esModuleInterop": true,
+      "allowSyntheticDefaultImports": true,
+      "forceConsistentCasingInFileNames": true,
+      "useDefineForClassFields": true, 
+      "declaration": false,
+      "noImplicitAny": false,
+      "removeComments": true,
+      "inlineSourceMap": true,
+      "moduleResolution": "Node",
+      "baseUrl": ".",
+      "paths": {
+        "@lib/*": ["/lib/*"],
+        "@dbextensions/*": ["/dbextensions/*"],
+        "@/*": [
+          "src/*"
+        ]
+        
+      
+      },
+      "types": [
+        "node",
+        "mocha"  
+      ]
+    },
+    
+    "include": [
+      "scripts/**/*.ts",
+      "src/**/*.ts",
+      "node_modules/lodash-es/**/*.js", 
+      "src/**/*.tsx",
+      "src/**/*.vue",
+      "tests/**/*.ts",
+      "tests/**/*.tsx",
+      "test/**/*.ts",
+      "test/**/*.tsx"
+    ],
+    "exclude": [
+      "node_modules"
+    ]
+    
+
+    
+  }
+  

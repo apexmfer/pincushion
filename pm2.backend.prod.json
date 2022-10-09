@@ -1,0 +1,19 @@
+ {
+    "apps" : [
+        {
+          "name": "apiServer",
+          "script": "npm run server_backend",
+          "watch": false,
+          "ignore_watch" : ["node_modules", "public","dist","cache"],
+          "watch_options": {
+            "followSymlinks": false
+            },
+          "env": { 
+              "NODE_ENV": "production"
+            }
+        }
+          
+    ]
+  }
+
+ 

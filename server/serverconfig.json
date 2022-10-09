@@ -1,0 +1,38 @@
+{
+    "development":{
+        "useHTTPS":false,
+        "requireAuthentication":false,
+        "chainId":5,
+        "port":3000,
+        "imageStoragePath":"/imagestorage/",
+        "jsonStoragePath":"./manifeststorage/"
+        
+    },
+    "test":{
+        "useHTTPS":false,
+        "requireAuthentication":false,
+        "chainId":5,
+        "port":6000,
+        "imageStoragePath":"./test/cache/" ,
+        "jsonStoragePath":"./test/cache/" 
+    },
+    "staging":{
+        "useHTTPS":false,
+        "requireAuthentication":false,
+        "chainId":5,
+        "port":3000,
+        "imageStoragePath":"./imagestorage/",
+        "jsonStoragePath":"./manifeststorage/"
+    },
+    "production":{
+        "useHTTPS":false,
+        "requireAuthentication":false,
+        "chainId":1,
+        "port":3000,
+        "imageStoragePath":"./imagestorage/",
+        "jsonStoragePath":"./manifeststorage/"
+    }
+    
+   
+   
+}

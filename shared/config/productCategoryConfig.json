@@ -1,0 +1,10 @@
+{
+    "categoryTypes":[
+
+        {"name":"size","value":"size","label":"size"},
+        {"name":"color","value":"color","label":"color"}
+    ]
+
+
+
+}

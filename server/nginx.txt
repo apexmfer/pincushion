@@ -1,0 +1,13 @@
+server {
+  listen 80;
+  listen [::]:80;
+
+  server_name starflask.com;
+
+  client_max_body_size 100M; #100mb
+  location / {
+      proxy_pass http://localhost:3000/;
+  }
+}
+
+
