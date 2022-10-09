@@ -52,7 +52,7 @@ export default class BackendServer  {
     appListener: any
 
     constructor(
-      public web3:any, 
+     
       public serverConfig:any,
       public apiControllers: Array< APIController >,
       public serverModules: ServerModule[]

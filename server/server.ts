@@ -71,10 +71,7 @@ let serverConfig = serverConfigFile[envmode]
     ])
     serverSegmentManagers.map(ext => ext.init())
 
-    
-    let web3 = new Web3( serverConfig.web3provider  )
-
-    console.log('web3 ready with provider ',serverConfig.web3provider )
+     
     
    
     let imageController = new ImageController(mongoDB)
@@ -95,7 +92,7 @@ let serverConfig = serverConfigFile[envmode]
 
          
 
-    let backendserver = new BackendServer(web3, serverConfig, apiControllers, serverMods)
+    let backendserver = new BackendServer(  serverConfig, apiControllers, serverMods)
     await backendserver.start()
      
  
