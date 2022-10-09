@@ -3,9 +3,10 @@
         "useHTTPS":false,
         "requireAuthentication":false,
         "chainId":5,
-        "port":3000,
+        "port":4000,
         "imageStoragePath":"/imagestorage/",
-        "jsonStoragePath":"./manifeststorage/"
+        "jsonStoragePath":"./manifeststorage/" 
+       
         
     },
     "test":{
@@ -14,13 +15,13 @@
         "chainId":5,
         "port":6000,
         "imageStoragePath":"./test/cache/" ,
-        "jsonStoragePath":"./test/cache/" 
+        "jsonStoragePath":"./test/cache/"
     },
     "staging":{
         "useHTTPS":false,
         "requireAuthentication":false,
         "chainId":5,
-        "port":3000,
+        "port":4000,
         "imageStoragePath":"./imagestorage/",
         "jsonStoragePath":"./manifeststorage/"
     },
@@ -28,9 +29,7 @@
         "useHTTPS":false,
         "requireAuthentication":false,
         "chainId":1,
-        "port":3000,
-        "imageStoragePath":"./imagestorage/",
-        "jsonStoragePath":"./manifeststorage/"
+        "port":4000
     }
     
    
