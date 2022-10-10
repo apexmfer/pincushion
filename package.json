@@ -1,6 +1,6 @@
 {
   "name": "PinCushion",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "databasePrefix": "pincushion",
   "header": "pincushion",
   "description": "Image storage and pinning service.",

@@ -1,7 +1,8 @@
 [  
     
     
-   {"type":"post","uri":"/uploadImage","method":"uploadImage","controller":"image"}
-            
+   {"type":"post","uri":"/uploadImage","method":"uploadImage","controller":"image"},
+   {"type":"post","uri":"/uploadManifest","method":"uploadManifest","controller":"manifest"}
+           
 ]
 

@@ -28,6 +28,7 @@ import ImageDBExtension from './dbextensions/ImageDBExtension'
 import BackendServer from './lib/backend-server'
   
 import ImageController from './controllers/ImageController'
+import ManifestController from './controllers/ManifestController'
 
 
 require('dotenv').config()
@@ -59,6 +60,7 @@ let serverConfig = serverConfigFile[envmode]
     
     dbExtensions.push(...[
       new ImageDBExtension(mongoDB),
+
       
     ])
 
@@ -75,11 +77,13 @@ let serverConfig = serverConfigFile[envmode]
     
    
     let imageController = new ImageController(mongoDB)
+    let manifestController = new ManifestController(mongoDB)
  
     //init API Controllers 
 
     let apiControllers = [
       imageController,
+      manifestController,
        
     ]
   
