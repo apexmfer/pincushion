@@ -29,7 +29,9 @@
         "useHTTPS":false,
         "requireAuthentication":false,
         "chainId":1,
-        "port":4000
+        "port":4000,
+        "imageStoragePath":"./imagestorage/",
+        "jsonStoragePath":"./manifeststorage/"
     }
     
    

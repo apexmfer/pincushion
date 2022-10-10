@@ -85,12 +85,12 @@ export default class ManifestController extends APIController {
     }catch(e){
       console.error(e)
     }
-    
+
     return {success: false, error:"Could not create manifest"}
 
 } 
  
-static async createManifestFile (contents:any) : Promise<AssertionResponse> {
+static async createManifestFile (contents:MetadataContents) : Promise<AssertionResponse> {
 
   let ext = '.json'
 
