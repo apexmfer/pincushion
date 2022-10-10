@@ -29,6 +29,7 @@ import BackendServer from './lib/backend-server'
   
 import ImageController from './controllers/ImageController'
 import ManifestController from './controllers/ManifestController'
+import PinningManager from './segmentmanagers/PinningManager'
 
 
 require('dotenv').config()
@@ -65,11 +66,18 @@ let serverConfig = serverConfigFile[envmode]
     ])
 
     await Promise.all(dbExtensions.map(ext => ext.bindModelsToDatabase()))
+
+
+    let pinningManager = new PinningManager(mongoDB, {verbose:false})
+    pinningManager.registerPinningFolder('./imagestorage')
+    pinningManager.registerPinningFolder('./manifeststorage')
     
+
     //Initialize the server segment managers which are also db extensions
     let serverSegmentManagers:Array<ServerSegmentManager> = []
     serverSegmentManagers.push(...[     
-      new ImageManager(mongoDB)
+      new ImageManager(mongoDB),
+      pinningManager
     ])
     serverSegmentManagers.map(ext => ext.init())
 
@@ -98,7 +106,8 @@ let serverConfig = serverConfigFile[envmode]
 
     let backendserver = new BackendServer(  serverConfig, apiControllers, serverMods)
     await backendserver.start()
-     
+
+ 
  
      
   }
